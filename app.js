@@ -42,6 +42,7 @@ app.get('/dokustorage/:gav([\-\.a-zA-Z\/0-9]+)', function (req, res, next) {
 });
 
 app.get('/dokustorage', function (req, res) {
+    fse.ensureDirSync(dokustorage);
     var files = fs.readdirSync(dokustorage);
     res.render('index', {
         paths: files
