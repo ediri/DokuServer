@@ -1,0 +1,52 @@
+/node_modules
+/jspm_packages
+/build
+/.idea
+/.vscode
+/typings
+ws_libs.ts
+
+# Ignore JS and MAP files from /src
+/src/**/*.js
+/src/**/*.map
+
+# Ignore login configuration file (is automatically copied by Gulp)
+/src/login/login-config.ts
+
+
+# Intellij project files
+.idea/
+*.iws
+*.iml
+
+# Eclipse
+.project
+.metadata
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+.classpath
+.settings/
+.loadpath
+*.launch
+
+# SublimeText project files
+*.sublime-workspace
+
+*~
+
+# netbeans
+/nbproject
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+#Icon?
+ehthumbs.db
+Thumbs.db
