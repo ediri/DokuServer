@@ -50,6 +50,8 @@ app.get('/dokustorage', function (req, res) {
 
 app.get('/', function (req, res) {
 
+    fse.ensureDirSync(dokustorage);
+
     res.render('index', {
         paths: ['dokustorage']
     });
